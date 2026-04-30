@@ -1,0 +1,78 @@
+header {
+    display: flex;
+    align-items: center;
+    height: 65px;
+    justify-content: space-between;
+    padding: 0px 100px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000;
+    background-color: white;
+}
+
+.logo {
+    width: 100px;
+    height: 40px;
+    background-image: url(../../Images/amazon-logo.png);
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+.logo:focus {
+    border: 1px solid black;
+}
+
+.checkout a {
+    text-decoration: none;
+    color: rgb(0, 113, 133);
+        font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.checkout {
+    font-size: 25px;
+    margin-bottom: 15px;
+    font-weight: 500;
+    font-family: "Roboto", Arial, Helvetica, sans-serif;
+}
+
+.lock-pic {
+    margin-left: 100px;
+    margin-bottom: 10px;
+}
+
+.item,
+.item-num {
+    color: rgb(0, 113, 133);
+}
+
+@media (max-width: 999px) {
+     .check-pro{
+        font-size: 20px;
+     }
+     .checkout a{
+        font-size: 20px;
+     }
+     .checkout{
+        font-size: 20px;
+     }
+     header{
+       padding: 0px 40px;
+     }
+     .lock-pic{
+        margin-left: 30px;
+     }
+}
+
+@media (max-width : 575px){
+     .logo{
+        width: 35px;
+        height: 35px;
+        background-image: url(../../Images/amazon-mobile-logo.png);
+     }
+}
